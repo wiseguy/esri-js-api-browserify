@@ -7,12 +7,23 @@ $map-width:100%;
 $map-height:100%;
 body,
 html {
+	margin:0;
+	padding:0;
     width: $map-width;
     height: $map-height;
 }
 
 #viewDiv {
-    background-color: red;
     width: $map-width;
     height: $map-height;
+}
+
+#ui-controls{
+	z-index:1000;
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:200px;
+	height:200px;
+	background-color: blue;
 }

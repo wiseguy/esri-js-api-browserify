@@ -1,38 +1,42 @@
 {
-    "name": "esri-js-api-browserify",
-    "version": "1.0.0",
-    "description": "Esri Dojo and Browserify",
-    "main": "index.js",
-    "scripts": {
-        "start": "npm run watch | npm run serve",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "browserify esri-app/src/main.js -t scssify -t jadeify -o esri-app/src/app/bundle.js",
-        "watch": "watchify esri-app/src/main.js -t scssify -t jadeify -o esri-app/src/app/bundle.js --debug --verbose",
-        "serve": "node webserver/server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wiseguy/esri-js-api-browserify.git"
-    },
-    "keywords": [
-        "esri",
-        "browserify"
-    ],
-    "author": "Aamir Suleman",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/wiseguy/esri-js-api-browserify/issues"
-    },
-    "homepage": "https://github.com/wiseguy/esri-js-api-browserify#readme",
-    "dependencies": {
-        "browserify": "^13.0.0",
-        "commander": "^2.9.0",
-        "express": "^4.13.4",
-        "jade": "^1.11.0",
-        "jadeify": "^4.6.0",
-        "jquery": "^2.2.2",
-        "open": "0.0.5",
-        "scssify": "^0.3.7",
-        "watchify": "^3.7.0"
-    }
+  "name": "esri-js-api-browserify",
+  "version": "1.0.0",
+  "description": "Esri Dojo and Browserify",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch | npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify esri-app/src/main.js -t scssify -t jadeify -t reactify -o esri-app/src/app/bundle.js",
+    "watch": "watchify esri-app/src/main.js -t scssify -t jadeify -t reactify -o esri-app/src/app/bundle.js --debug --verbose",
+    "serve": "node webserver/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiseguy/esri-js-api-browserify.git"
+  },
+  "keywords": [
+    "esri",
+    "browserify"
+  ],
+  "author": "Aamir Suleman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiseguy/esri-js-api-browserify/issues"
+  },
+  "homepage": "https://github.com/wiseguy/esri-js-api-browserify#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "browserify": "^13.0.0",
+    "commander": "^2.9.0",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jadeify": "^4.6.0",
+    "jquery": "^2.2.2",
+    "open": "0.0.5",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "reactify": "^1.1.1",
+    "scssify": "^0.3.7",
+    "watchify": "^3.7.0"
+  }
 }
