@@ -1,0 +1,18 @@
+$app-font: "Franklin Gothic Book",
+Arial;
+
+/*Colors*/
+
+$map-width:100%;
+$map-height:100%;
+body,
+html {
+    width: $map-width;
+    height: $map-height;
+}
+
+#viewDiv {
+    background-color: red;
+    width: $map-width;
+    height: $map-height;
+}
